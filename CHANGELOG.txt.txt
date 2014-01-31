@@ -1,0 +1,28 @@
+  __  __           _____ _______ ______ _____  __  __ _____ _____     | 
+ |  \/  |   /\    / ____|__   __|  ____|  __ \|  \/  |_   _|  __ \    |
+ | \  / |  /  \  | (___    | |  | |__  | |__) | \  / | | | | |  | |   |
+ | |\/| | / /\ \  \___ \   | |  |  __| |  _  /| |\/| | | | | |  | |   |
+ | |  | |/ ____ \ ____) |  | |  | |____| | \ \| |  | |_| |_| |__| |   |
+ |_|  |_/_/    \_\_____/   |_|  |______|_|  \_\_|  |_|_____|_____/    |
+                                                                      |
+______________________________________________________________________|
+
+PATCH & Correctif : 
+
+le 31/01/2014 :
+	---> Correction du code verifiant la chaine saisie
+	
+
+	---> Ajout des structures dans le fichier d'en-tête "niveau.h"
+		--> Structure Joueur
+			-> Alias Joueur mis en place
+		--> Structure JeuEnCour
+			-> Alias JeuEnCour mis en place
+TO DO : 	
+
+
+---> Utiliser les structure pour clarifier le code 
+---> Mettre en place l'utilisation du fichier
+	---> Crypter le fichier pour eviter les modifications du joueur malveillant
+	---> Verifier que les scores sont bien compris entre 1 ( inclus ) et 12 ( inclus )
+---> Penser a faire saisir le pseudo du joueur 

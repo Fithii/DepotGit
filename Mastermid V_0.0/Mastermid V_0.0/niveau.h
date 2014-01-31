@@ -10,6 +10,26 @@
 //Inclusion des fichier d'en-tête nescessaire 
 #include "Affichage.h"
 
+//Inclusion des alias des structures
+typedef struct Joueur Joueur;
+typedef struct JeuEnCour JeuEnCour;
+
+//Inclusion des structures
+
+struct Joueur //Definition des propriétés du joueur
+{
+	char *Pseudo;
+	int NbrCoup;
+};
+
+struct JeuEnCour
+{
+	int *ChainePass;
+	int *ChaineUser;
+	char *Affichage;
+};
+
+
 //Inclusion des signatures des fonctions
 int Aleatoire (int min, int max);
 void InitTableau(int *Tableau,int TailleTab, int allowaleaiden);

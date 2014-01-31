@@ -114,6 +114,10 @@ void InitChaineUtilisateur(int *Tableau, int TailleTab)
 		{
 			printf("\nSaisie la combinaison : "); //Affiche le message
 			scanf("%s", ChaineSaisie); //Recupere la valeur 
+			if (strlen(ChaineSaisie) > 5)
+			{
+				printf("\nLa chaine saisie est trop longue.."); 
+			}
 		} while (atoi(ChaineSaisie) == 0 || strlen(ChaineSaisie) > 5); //Tant que la chaine n'est pas un chiffre numerique ( Atoi envoie 0 en code d'erreur, dans ce jeu le 0 n'est pas utiliser atoi est donc utilisable ) ou si la taille de la chaine est superieur a 5
 		i = 0;
 		while (ChaineSaisie[i] != '\0') //Tant qu'on est pas arriver a la fin de la chaine
@@ -131,7 +135,7 @@ void InitChaineUtilisateur(int *Tableau, int TailleTab)
 			}
 			i++;
 		}	
-	} while (SaisieOk != 1);
+	} while (SaisieOk == 1);
 }
 
 int FinDuJeu(char *Affichage, int nbrcoup)
